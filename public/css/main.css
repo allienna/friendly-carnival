@@ -1,0 +1,67 @@
+html,
+body {
+    height: 100%;
+    background-color: #3ca2e0;
+}
+
+body {
+    text-shadow: none;
+}
+
+.site-wrapper {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.tasks>li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.tasks>li:before {
+    content: "\A4 \ "; /* caractère ISO 10646 */
+}
+
+.tasks>li:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.input-underline:focus {
+    border-bottom: 2px solid #fff;
+    box-shadow: none;
+}
+
+.btn-outline.btn-white {
+    box-shadow: 0 0 0 2px rgba(255,255,255,.8)inset;
+    color: rgba(255,255,255,.8);
+}
+
+.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn-outline {
+    background: 0 0;
+    border-color: transparent;
+    font-weight: 400;
+}
+
+.btn-outline.btn-white:hover {
+    box-shadow: 0 0 0 2px #fff inset;
+    color: #fff;
+}
+.input-underline {
+    background: 0 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(255,255,255,.4);
+    color: #fff;
+    border-radius: 0;
+}
+
+.form-control::-webkit-input-placeholder { color: white; }
+.form-control:-moz-placeholder { color: white; }
+.form-control::-moz-placeholder { color: white; }
+.form-control:-ms-input-placeholder { color: white; }
