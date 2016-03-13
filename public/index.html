@@ -11,67 +11,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cover.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <script src="/es6-shim/es6-shim.min.js"></script>
+    <script src="/systemjs/dist/system-polyfills.js"></script>
+    <script src="/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="/systemjs/dist/system.src.js"></script>
+    <script src="/rxjs/bundles/Rx.js"></script>
+    <script src="/angular2/bundles/angular2.dev.js"></script>
+
+    <script>
+    System.config({
+      defaultJsExtensions: true,
+      packages: {
+        app: {
+          format: 'register',
+          defaultExtensions: 'ts'
+        }
+      }
+    });
+    System.import('app/main');
+    </script>
 </head>
 <body>
 
-<div class="site-wrapper">
-
-    <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-            <div class="masthead clearfix">
-                <div class="inner">
-                    <h3 class="masthead-brand">Friendly Carnival</h3>
-                    <!--<nav>
-                        <ul class="nav masthead-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>-->
-                </div>
-            </div>
-
-            <div class="inner cover">
-                <h1 class="cover-heading">You have 2 remaining tasks.</h1>
-                <!-- <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-                <p class="lead">
-                    <a href="#" class="btn btn-lg btn-default">Learn more</a>
-                </p>-->
-                <ul class="tasks">
-                    <li>Go to the store</li>
-                    <li>Prepare AngularJs 2 presentation</li>
-                </ul>
-
-                <!--<p class="lead">
-                    <a href="#" class="btn btn-lg btn-default">New task</a>
-                </p>-->
-
-                <form class="form-inline">
-                    <div class="form-group">
-                        <input type="text" class="form-control input-underline input-lg" placeholder="New task">
-                        <button type="submit" class="btn btn-white btn-outline btn-lg btn-rounded">Add</button>
-                    </div>
-                </form>
-            </div>
+    <todo-app>loading...</todo-app>
 
 
-
-            <div class="mastfoot">
-                <div class="inner">
-                    <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
